@@ -1,0 +1,446 @@
+[
+  {
+    "question": "SAFE-SQL은 어떤 기술이나 방법론을 사용하여 텍스트를 SQL로 변환합니까?",
+    "needs_rag": 1
+  },
+  {
+    "question": "이 논문의 저자들은 어떤 기관에 소속되어 있습니까?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL의 주요 목적은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Text-to-SQL의 목적은 무엇인가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL의 주요 특징은 무엇이며, 어떻게 SQL 생성 품질을 향상시키는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "기존의 Text-to-SQL 접근 방식이 직면하는 한계는 무엇인가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Text-to-SQL generation is primarily aimed at converting what into SQL queries?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What challenges do traditional Text-to-SQL approaches face when translating user intent?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the four key steps involved in the SAFE-SQL approach for enhancing SQL generation?",
+    "needs_rag": 1
+  },
+  {
+    "question": "RAT-SQL과 PICARD의 주요 차이점은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "자연어 질문과 데이터베이스 스키마의 구조 정보가 SQL 생성에 미치는 영향은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SELF-Instruct의 목적은 무엇이며, 어떤 방법을 통해 instruction-tuning 데이터를 생성하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL은 무엇을 위해 설계되었나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL이 기존 방법들과 다른 점은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL에서 생성된 예제는 어떤 기준으로 필터링되나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL의 첫 번째 단계는 무엇이며, 그 목적은 무엇인가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "스키마 링크 단계에서 어떤 요소들이 분석되는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "스키마 링크가 Text-to-SQL 작업의 성능 향상에 기여하는 방법은 무엇인가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "LLM은 각 테스트 질문에 대해 몇 개의 합성 예시를 생성하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "생성된 SQL 질문들은 어떤 요소들이 다양화되면서도 구조적 유사성을 유지하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "이유 경로는 무엇을 설명하며, 그것이 SQL 쿼리 실행 과정에서 어떤 역할을 하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFESQL의 평가 과정에서 생성된 예제의 관련성을 어떻게 결정하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "세 가지 구성 요소인 의미 유사성, 구조적 정렬, 추론 경로 품질은 각각 무엇을 평가하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFESQL에서 LLM은 각 구성 요소의 점수를 어떻게 계산하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL은 어떤 기준에 따라 예제를 선택하는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "임계값 θ는 무엇을 의미하며, 왜 설정되었는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "임계값 설정이 SQL 생성에 어떤 영향을 미치는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "최종 단계에서 생성된 고품질 예제는 무엇과 결합되어 포괄적인 프롬프트를 구성하는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL은 어떤 방식으로 SQL 쿼리를 생성하는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "이 문단에서 언급된 '해석 가능한 추론 과정'은 무엇을 의미하는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "실험의 주제는 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "이 실험에서 어떤 방법론이 사용되었나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "실험의 결과는 무엇을 시사하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "실험에서 비교되는 모델들은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Spider dev 데이터셋의 구성은 어떻게 되나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "BIRD 데이터셋은 어떤 종류의 데이터를 포함하고 있나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the purpose of supervised fine tuning in Text-to-SQL methods?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does SQLPaLM utilize synthetic data augmentation?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What approach does Din SQL take to enhance the reasoning process of large language models?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the two metrics used to evaluate the model's performance?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How is Execution Accuracy (EX) defined in the context of SQL query evaluation?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What does Exact Match (EM) assess regarding the predicted SQL queries?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL shows superior performance in which SQL difficulty categories compared to other methods?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What factors contribute to the improved performance of SAFE-SQL in generating complex SQL queries?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does SAFE-SQL's execution accuracy on the Bird dataset compare to that of the Syn-SQL method?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Ablation study에서 어떤 네 가지 주요 모듈이 제거되었는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Reasoning Path를 제거했을 때 EX 점수에 어떤 변화가 있었는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "각 구성 요소가 SQL 생성에서 최적의 성능을 달성하는 데 왜 중요한가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL의 성능이 다른 방법들과 비교했을 때 어떤 특징이 있나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "임베딩 유사성이 실행 정확도에 미치는 영향은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "세 가지 측정 요소가 성능에 미치는 영향은 어떻게 나타났나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "첫 번째 예제의 관련성 점수는 얼마이며, 그 점수를 얻은 이유는 무엇인가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "두 번째 예제에서 사용된 용어의 차이는 무엇이며, 이로 인해 어떤 점수 변화가 있었는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "세 번째 예제가 낮은 관련성 점수를 받은 이유는 무엇이며, 그 결과로 나타난 유사성 점수는 얼마인가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL은 어떤 목적을 가지고 설계되었나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL에서 성능 향상에 기여하는 두 가지 주요 요소는 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL의 성능은 어떤 종류의 시나리오에서 특히 두드러진 개선을 보였나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL의 성능이 뛰어난 이유는 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "현재의 SAFE-SQL 프레임워크가 직면한 제한 사항 중 하나는 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "모델이 다루기 어려운 쿼리 유형은 어떤 것들이 있나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "이 연구에서 SQL 생성 향상은 어떤 방법을 사용하고 있나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "LLMs가 가질 수 있는 편향을 어떻게 완화하고 있나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "이 연구는 어떤 종류의 데이터 세트를 사용하며, 그 이유는 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "이 연구는 어떤 기관의 지원을 받았나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "지원금은 어떤 프로그램이나 프로젝트에 사용되었나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "어떤 정부 부처가 이 연구에 자금을 제공했나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "이 문단에 언급된 논문들은 어떤 주제를 다루고 있나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "다양한 저자들이 연관된 연구들은 어떤 방식으로 텍스트-투-SQL 문제를 해결하려고 하고 있나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "이 문단에서 언급된 연구 중, 자연어 인터페이스와 관련된 연구는 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "부록의 주제는 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "부록은 문서에서 어떤 역할을 하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "부록의 내용은 어떻게 구성될 수 있나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SAFE-SQL의 목적은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "B 프롬프트의 역할은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "이 문단에서 SAFE-SQL에 대해 설명하는 핵심 아이디어는 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main task described in the prompt for example generation?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How many similar questions, SQL queries, and reasoning paths are to be generated?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the key aspects to focus on for ensuring high-quality examples?",
+    "needs_rag": 1
+  },
+  {
+    "question": "생성된 질문이 테스트 질문과 동일한 의미를 가져야 하는 이유는 무엇인가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "질문을 변형할 때 어떤 요소를 고려해야 하는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "모호함이나 추가 제약을 피해야 하는 이유는 무엇인가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "주요 용어의 예시는 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "구조적 유사성에서 기능적 역할과 관계는 어떻게 유지되어야 하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "용어가 다를 경우에도 어떤 요소가 동일해야 한다고 언급되었나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "SQL 쿼리를 구성하기 위해 필요한 논리적 추론의 일관성은 어떤 요소에 의해 유지되나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "문단에서 언급된 SQL 작업의 적용 방식은 어떠한 요소들을 포함하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "예시 생성을 위한 제로샷 프롬프트는 무엇을 기반으로 하고 있나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "예제 생성을 위해 어떤 프롬프트를 사용하나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "그림 8은 무엇을 보여주고 있나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "제로 샷 프롬프트의 목적은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "최종 추론을 위해 어떤 종류의 프롬프트가 사용되나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "문단에서 제시된 텍스트-투-SQL 추론기의 역할은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "예제의 관련성 점수를 계산할 때 고려해야 할 기준은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "문장에서 점수를 매기는 기준은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "유사한 의미를 가진 질문들은 어떤 경우에 높은 점수를 받나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "질문들이 서로 다른 데이터베이스 작업에 초점을 맞출 경우 어떻게 점수가 매겨지나요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "구조적 유사성을 평가할 때 어떤 요소들이 분석되어야 하는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "점수 시스템에서 10점은 어떤 조건을 의미하는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "구조적 관계가 약할 때 점수는 어떻게 평가되는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "이 문단에서 SQL 쿼리를 도출하기 위한 논리적 단계를 평가할 때 고려해야 할 주요 요소는 무엇인가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "예시 질문과 테스트 질문 간의 유사성을 평가하기 위해 어떤 기준이 사용되는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "점수 체계는 어떻게 구성되어 있으며, 각 점수는 어떤 의미를 갖는가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "최종 SQL 쿼리를 생성하기 위해 어떤 절차를 따라야 합니까?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Qwen 2.5 시리즈 모델의 정확도는 난이도에 따라 어떻게 달라집니까?",
+    "needs_rag": 1
+  },
+  {
+    "question": "테이블 9와 테이블 10의 주요 차이점은 무엇인가요?",
+    "needs_rag": 1
+  },
+  {
+    "question": "모델 크기가 예제 생성에 미치는 영향은 무엇인가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Qwen2.5 모델의 성능에서 14B 모델이 차지하는 위치는?",
+    "needs_rag": 1
+  },
+  {
+    "question": "더 큰 모델이 SQL 쿼리 생성을 개선하는 이유는 무엇인가?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What does Figure 5 illustrate regarding the spider dev set?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Why might questions in the same category lead to inconsistencies in training set retrieval?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What limitation is highlighted in the context of Text-to-SQL tasks?",
+    "needs_rag": 1
+  }
+]

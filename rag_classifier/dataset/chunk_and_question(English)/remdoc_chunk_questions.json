@@ -1,0 +1,254 @@
+[
+  {
+    "chunk_id": 0,
+    "question": [
+      "What are the key dates mentioned in the passage regarding the publication process?",
+      "What does the Digital Object Identifier signify in this context?",
+      "What is the significance of the current version date listed in the passage?"
+    ],
+    "content": "<!-- image -->  \nReceived 4 November 2024, accepted 13 December 2024, date of publication 17 December 2024, date of current version 26 December 2024.  \nDigital Object Identifier 10.1 109/ACCESS.2024.3519095  \n<!-- image -->"
+  },
+  {
+    "chunk_id": 1,
+    "question": [
+      "What is the main challenge addressed by the authors regarding the evaluation of medical document summaries?",
+      "How does the proposed REMDoC metric differ from existing evaluation metrics in assessing medical summaries?",
+      "What techniques does REMDoC utilize to enhance the assessment of summary quality without reference texts?"
+    ],
+    "content": "## REMDoC: Reference-Free Evaluation for Medical Document Summaries via Contrastive Learning  \nJIMIN LEE, INGEOL BAEK , AND HWANHEE LEE , (Member, IEEE)  \nDepartment of Artificial Intelligence, Chung-Ang University, Seoul 06974, South Korea  \nCorresponding author: Hwanhee Lee (hwanheelee@cau.ac.kr)  \nThis work was supported in part by the Chung-Ang University Research Grants, in 2023; and in part by the Institute for Information &amp; Communications Technology Planning &amp; Evaluation (IITP) through Korean Government (MSIT) through the Artificial Intelligence Graduate School Program, Chung-Ang University, under Grant 2021-0-01341.  \nABSTRACT Despite significant advancements in automatic summary evaluation metrics based on pre-trained language models, accurately assessing the quality of medical document summaries remains a considerable challenge. Existing evaluation metrics often struggle to provide reliable assessments for medical summaries, particularly in the absence of reference texts. In this paper, we propose novel reference-free medical document summary evaluation metric, REMDoC: R eference-free E valuation for M edical Do cument Summaries via C ontrastive Learning which does not require reference summaries to evaluate summaries. REMDoC employs contrastive learning using medical text-tailored data augmentation techniques. Our primary motivation is to improve the alignment of automatic evaluations with human judgments, making the evaluation process more reliable and closer to medical expert assessments. Our research showcases the metric's superior performance in assessing the quality of generated summaries without the need for comparison texts. Through extensive experimentation and analysis, this work makes significant strides in improving the reliability and usability of automatic medical document evaluation tools in medical document settings.  \nINDEX TERMS Medical document summarization, contrastive learning, summary evaluation, referencefree evaluation."
+  },
+  {
+    "chunk_id": 2,
+    "question": [
+      "What challenges are associated with summarizing medical documents compared to general document summaries?",
+      "Why do researchers often rely on medical experts for evaluating medical document summaries?",
+      "What innovative approach does the authors' proposed metric take to evaluate medical document summaries?"
+    ],
+    "content": "## I. INTRODUCTION  \nIn the rapidly evolving field of healthcare systems, the ability to quickly and accurately summarize medical documents can significantly aid professionals in keeping abreast of the latest developments and making informed decisions. Medical documents are filled with specialized terminology, abbreviations, and jargon that can be challenging to interpret and summarize accurately [1], [17]. Moreover, medical documents often contain nuanced information that requires a professional understanding of the context. Hence, evaluating the quality of medical summaries is more complex than evaluating general document summary tasks. Also, medical document summary evaluation models struggle to capture medical details or nuances [14]. Because of these difficulties,  \nThe associate editor coordinating the review of this manuscript and approving it for publication was Yiqi Liu .  \nresearchers often require medical experts to assess the accuracy, completeness, and coherence of the summaries, making the evaluation process time-consuming and costly. For previous work on medical document summarization evaluation, widely used metrics such as ROUGE [11], BERTScore [27], and Delta-Ei [5] have been used. Some metrics leverage sentence-bert [19] and compute the cosine similarity between embeddings of target summary and generated summary to use as an evaluation metric. Numerous efforts have been made to identify and summarize the key points of related medical documents and to assess the quality of these summaries [8]. However, our findings demonstrate these metrics are not well-suited for medical document summarization evaluation, as n-gram similarity metrics such as ROUGE and models fine-tuned on datasets like SciFact [22] have disappointingly low correlations with human evaluation scores proposed in the previous work [24], under 0.053 as shown in Table 1.  \n<!-- image -->  \nFIGURE 1. Overall training procedure of the reference-free medical document summary evaluation metric.  \n<!-- image -->  \nTABLE 1. Correlation coefficients with human judgments for the widely used metrics on medical document summarization tasks.  \nThis suggests traditional metrics do not adequately reflect human judgment for summarization tasks. Due to the nature of medical text data, the meaning of a sentence can completely change with just one-word alteration, and the relationships between words are crucial. Capturing these minor changes is significantly important in evaluating the medical summaries. In this work, we propose a reference-free medical document summary evaluation metric that is not dependent on the reference ground truth medical summaries and use a document-summarization pair to evaluate the quality of medical document summaries. We develop our method upon the RoBERTa-large [13] model. We fine-tune the model via contrastive learning, where the model is trained to distinguish between the ground-truth summaries and precisely augment various positive and negative medical summaries. The model learns to differentiate the real summary from the augmented summary, enhancing its ability to accurately understand and evaluate summary like medical professionals. We evaluate our proposed metric on the human evaluation medical dataset. Our experimental results demonstrate high correlations with human evaluations, which outperform previous medical summary evaluation metrics."
+  },
+  {
+    "chunk_id": 3,
+    "question": [
+      "What are some of the data augmentation techniques mentioned in the passage that enhance text classification performance?",
+      "How does the research address the discrepancy between automated metrics and human evaluations in medical document summarization?",
+      "What is the significance of the contrastive learning approach in the context of the proposed evaluation metric for medical document summaries?"
+    ],
+    "content": "## II. RELATED WORK  \nEDA [25] suggests simple yet effective data augmentation techniques for the texts. EDA demonstrates various data augmentation techniques, such as synonym replacement, random swap, and random deletion methods, significantly enhancing text classification task performance. Named entity replacements significantly affect the performance of language models, highlighting their sensitivity to entity modifications [6]. Our research integrates and improves these augmentation techniques to help models capture the nuanced characteristics inherent in medical documents. Additionally, previous work [24] reveals a notable discrepancy between automated metrics and human evaluations in medical document summarization. They introduce a dataset of human-assessed summary quality facets from the medical document summarization for literature review and find out the inefficiency of conventional metrics for summarization evaluation. Our work leverages these human evaluation scores to substantiate our model's efficacy. Recent developments in summary evaluation emphasize improved alignment with human judgment by focusing on semantic and contextual understanding. SummScore [12] overcomes the limitations of traditional token-based metrics by using a cross-encoder model to evaluate semantic similarity directly with the original text. The Dense Passage Retrieval [7] approach is trained with both positive passages and negative passages, reinforcing the model's ability to distinguish relevant passages. Furthermore, UMIC [10] introduces a metric that does not require reference captions to evaluate image captions. By utilizing negative captions and fine-tuning the  \n<!-- image -->  \nUNITER model [2] through contrastive learning, this metric provides a robust evaluation framework. Drawing inspiration from these methodologies, we adopt a contrastive learning approach to train a metric for medical document summaries. By combining diverse data augmentation techniques with this contrastive learning framework, we propose a novel reference-free metric specifically designed for the evaluation of medical document summaries."
+  },
+  {
+    "chunk_id": 4,
+    "question": [
+      "What is the main purpose of the REMDoC metric introduced in the passage?",
+      "How does the passage describe the process of augmenting the MSLR Cochrane dataset?",
+      "What approach is used to train the REMDoC metric, according to the passage?"
+    ],
+    "content": "## III. METHODS  \nWeintroduce a new medical document summarization metric REMDoC, R eference-free E valuation for M edical Do cument Summaries via C ontrastive Learning, through the following two steps. First, we augment the MSLR Cochrane [23] dataset using six different methods. By employing these augmentation techniques, we aim to accurately differentiate between summaries that retain the original meaning and those that do not. We formulate the final training dataset to this form: (original summary, augmented summary) (Sec III-A). Finally, we train the metric as a contrastive learning approach by learning the representation of medical document summaries by comparing similar (positive medical summary) and dissimilar (negative medical summary) pairs of data points (Sec III-B)."
+  },
+  {
+    "chunk_id": 5,
+    "question": [
+      "What is the primary purpose of the augmentation approach described in the passage?",
+      "What are the two types of augmentation methods mentioned, and how do they differ in their impact on the original summary?",
+      "How many augmented summaries were created from the original summaries for the training dataset?"
+    ],
+    "content": "## A. MEDICAL SUMMARY AUGMENTATION  \nOur augmentation approach is designed not only to introduce conspicuous differences but also to incorporate subtle, biomedically relevant variations from the original medical summaries. These methods are meticulously crafted to generate synthetic examples of negatively augmented summaries, thereby enriching the dataset for contrastive learning. Our method lies in using pairs of (original summary, augmented summary) as inputs for contrastive learning. The original summary is a concise representation of medical documents, while the augmented summary is a modified version of the original, incorporating augmented sentences aimed at enhancing the richness of the training data for contrastive learning. We choose the positive augmentation methods (synonym replacement, paraphrasing) because they retain expressions that are almost identical to the original summary, ensuring that the essential meaning remains unchanged. This helps the model learn to recognize valid yet slightly altered representations of the same medical content. On the other hand, the negative augmentation methods are designed to introduce more diversified and nuanced modifications that deviate from the original summary's content. These techniques (random deletion, random swap, antonym replacement, NER swap) create summaries with significant differences, such as the removal or distortion of critical information. This enables the model to distinguish between accurate summaries and those that contain misleading or incomplete information, further enhancing its ability to evaluate medical document summaries effectively. In this work, we utilize the following data augmentation techniques to generate new data pairs as in Table 2 for training the proposed metric. Our final training dataset consists of 22,350 augmented summaries derived from the 3,725 original summaries."
+  },
+  {
+    "chunk_id": 6,
+    "question": [
+      "What is the primary purpose of the Synonym Replacement (SR) method as described in the passage?",
+      "Which resource is mentioned as the source for finding synonyms in the Synonym Replacement process?",
+      "Can you provide an example of a word substitution mentioned in the passage?"
+    ],
+    "content": "## 1) SYNONYM REPLACEMENT  \nSynonym Replacement (SR) is designed to generate sentences that are semantically similar by replacing certain words with their synonyms. This method helps us to diversify the linguistic expression within our dataset without deviating from the original meaning. The words are from WordNet lexical databases [15], which have words to change. For each selected word, look up synonyms that fit the context of the sentence. The next step is replacing the original words with their synonyms. For instance, we substitute 'low-quality' with 'inferior-quality,' 'comparing' with 'contrasting,' and 'advanced' with 'progressed.'."
+  },
+  {
+    "chunk_id": 7,
+    "question": [
+      "What is the primary purpose of paraphrasing as described in the passage?",
+      "Which model is employed for paraphrasing in the text, and what is its significance?",
+      "How does paraphrasing contribute to the summarization model's evaluation metric?"
+    ],
+    "content": "## 2) PARAPHRASING  \nParaphrasing (PAR) rephrases sentences to add structural diversity. We employ the Pegasus model [26], which shows the state-of-the-art performance in the paraphrasing multiple dataset task. This approach involves rephrasing sentences to create semantically similar but structurally distinct variants. By doing so, we enhance the generalizability and comprehension capabilities of our summarization model. This paraphrased sentence maintains the core meaning of the original but is reconstructed with different vocabulary and grammatical structures, which contributes to a richer environment for our summarization evaluation metric."
+  },
+  {
+    "chunk_id": 8,
+    "question": [
+      "What is the primary purpose of Random Deletion (RD) as described in the passage?",
+      "How are words selected for deletion in the Random Deletion process?",
+      "What does the Random Deletion technique aim to simulate in terms of text processing?"
+    ],
+    "content": "## 3) RANDOM DELETION  \nRandom Deletion (RD) randomly removes words to simulate different forms of summarization compression. For each sentence in the dataset, we randomly select words for deletion, where each word has an equal chance of being deleted. We remove these selected words from the sentence."
+  },
+  {
+    "chunk_id": 9,
+    "question": [
+      "What is the primary function of the Random Swap technique as described in the passage?",
+      "Which specific words are mentioned as being swapped in the original sentence?",
+      "How does the Random Swap technique affect the semantic integrity of the information conveyed?"
+    ],
+    "content": "## 4) RANDOM SWAP  \nRandom Swap (RS) randomly selects pairs of words within a sentence and swaps their positions, which can increase linguistic diversity without significantly altering the semantic integrity of the information conveyed. In the original sentence, two specific swaps are performed. The term 'ovarian' was swapped with 'standard', and the terms 'women' and 'we' are also exchanged."
+  },
+  {
+    "chunk_id": 10,
+    "question": [
+      "What is the main purpose of the Antonym Replacement technique?",
+      "What is the first step in the Antonym Replacement process?",
+      "How does Antonym Replacement benefit a model's understanding of concepts?"
+    ],
+    "content": "## 5) ANTONYM REPLACEMENT  \nAntonym Replacement (AR) is a data augmentation technique that replaces specific words or expressions in text with words or expressions with the opposite meaning. This approach aids our model in improving its ability to understand and distinguish opposite concepts. The first step involves identifying words within a sentence that can be replaced with their antonyms. The target word is replaced with its"
+  },
+  {
+    "chunk_id": 11,
+    "question": [
+      "What is the main focus of the examples provided in Table 2?",
+      "What type of data does the MSLR dataset represent, as mentioned in the passage?",
+      "What specific technique is illustrated by the example of replacing 'with' with its antonym?"
+    ],
+    "content": "## TABLE 2. Examples of generated medical document summaries through the proposed data augmentation approaches.  \nFIGURE 2. Distribution of entity classes in the MSLR dataset.  \n<!-- image -->  \nantonym. For example, we replaced 'with' with the antonym of 'without' as in Table 2."
+  },
+  {
+    "chunk_id": 12,
+    "question": [
+      "What is the purpose of the Named Entity Replacement (NER) method as described in the passage?",
+      "How does the augmentation process involve swapping entities, and what is an example provided in the text?",
+      "What benefits does the augmentation strategy offer to the training dataset and the models that use it?"
+    ],
+    "content": "## 6) NAMED ENTITY REPLACEMENT  \nNamedEntity Replacement (NER) method substitutes named entities with others of the same category to enrich the model's ability to handle factual information. In our study, we implemented a novel approach to data augmentation for the Cochrane dataset's training set by leveraging the d4data/biomedical-ner-all 1 model, which recognizes 84 biomedical entities. This pre-trained model identifies and categorizes biomedical entities into various entity group categories such as lab value , detailed description , therapeutic procedure , disease disorder , medication , diagnostic procedure , and sign symptom . Upon analyzing the training dataset,  \n1 https://huggingface.co/d4data/biomedical-ner-all  \nwe gathered words belonging to these seven distinct entity groups. The augmentation process involved swapping entities within the same category across different data instances. For instance, if 'headache' is labeled as a Sign symptom in the first training entry and 'nausea' is also labeled as a Sign symptom in the fifth, we swapped these two terms to create a new, augmented training data instance. This method of intra-group entity swapping aims to enrich the dataset by diversifying the context in which each term is used, potentially improving the robustness of models trained on this augmented dataset. The swapping technique is carefully designed to maintain the integrity of the medical context, ensuring that the swapped entities are contextually appropriate. This augmentation strategy not only augments the size of the training data but also introduces a level of variance that can enhance the generalization capabilities of the model."
+  },
+  {
+    "chunk_id": 13,
+    "question": [
+      "What is the primary goal of contrastive learning as described in the passage?",
+      "How does contrastive learning reduce the effort required from human annotators?",
+      "What components are used to construct the dataset for contrastive learning in the passage?"
+    ],
+    "content": "## B. CONTRASTIVE LEARNING  \nContrastive learning is a method that extracts features by minimizing the representation distance between similar samples and maximizing the distance between representations of different samples. By employing contrastive learning, we can train the metric without needing specific labels, thereby reducing the effort required from human annotators. Weconstruct a dataset based on the original summary ( qi ) and positive augmentation methods, SR and PAR, and negative  \n<!-- image -->  \nIEEE AccesS'  \n<!-- image -->  \nIEEE AccesS'  \nFIGURE 3. Proposed contrastive learning framework for fine-tuning a metric.  \n<!-- image -->"
+  },
+  {
+    "chunk_id": 14,
+    "question": [
+      "What is the purpose of the NER Swap Algorithm as described in the passage?",
+      "How does the training process utilize positive and negative samples in relation to the contrastive loss function?",
+      "What effect does the model aim to achieve when it encounters a negative augmented summary that diverges significantly?"
+    ],
+    "content": "## Algorithm 1 Flow of NER Swap Algorithm  \n```\nData : Set of documents D = { dk } T k = 1 Set of NERs N = { ni , k } L , T i , k = 1 Result : NER swapped Medical Summaries S ∗ S ∗ ← []; ; // Initialize the output list for k = 1 to T do for j = 1 to len (NERd : , k ) do u ← Random( Nj , T ); ; // Select a random number u from Nj , T dk . Replace( NERdj , k , nj , u ); ; // Replace NER in document N . Remove( nj , u ); ; // Remove used NER S ∗ . Append( dk ); ; // Append modified document to list return S ∗\n```  \naugmentation methods, RD, RS, AR, and NER.  \n<!-- formula-not-decoded -->  \nD is the training data that consists of m instances. We utilize an in-batch negative function for positive samples ( p + i ) and negative samples ( p -i ). During training, each of the two positive samples is included separately, resulting in the creation of its own loss function. The mathematical formulation of the Lcs is as follows :  \n<!-- formula-not-decoded -->  \nwhere sim( qi , p + i ) is a cosine similarity between qi and p + i . This approach intuitively aligns with the goal of medical document summary evaluation. For positive augmented datasets, our model learns to minimize the distance between their representations, recognizing them as different expressions of the same fundamental information. On the other hand, if a negative augmented summary diverges significantly, by introducing unrelated information or omitting critical details, our model increases the representational distance, highlighting the loss or distortion of information. Through this approach, the model can optimize both learning objectives simultaneously. The training process does not solely depend on the static training data but rather on the model's capacity to minimize this contrastive loss by updating its parameters. These parameter updates enable the model to generalize and perform well on unseen data. Thus, although the loss function utilizes training data pairs during optimization, it inherently drives the learning of representations that capture more generalizable relationships within the data, going beyond the specific samples in the training set."
+  },
+  {
+    "chunk_id": 15,
+    "question": [
+      "What is the main focus of the experiments described in this section?",
+      "What methodology is implied to be used in the experiments?",
+      "How does this section relate to the overall purpose of the document?"
+    ],
+    "content": "## IV. EXPERIMENTS"
+  },
+  {
+    "chunk_id": 16,
+    "question": [
+      "What does the PIO alignment methodology evaluate in the context of summary generation?",
+      "Which traditional summary evaluation metrics are mentioned in the passage, and what does each metric measure?",
+      "What role do Large Language Models (LLMs) play in the evaluation process described in the passage?"
+    ],
+    "content": "## A. BASELINES  \nWe employ a facet-based human evaluation methodology known as PIO [18]. PIO alignment stands for population, intervention, and outcome as the human evaluation score. Population metric assesses the degree to which the population described in the generated summary aligns with that in the target summary. Intervention evaluates the consistency of the intervention details between the generated and target summaries. Furthermore, we employ fluency, direction, and strength scores which are also important alignment metrics for evaluating the quality of summaries. The outcome measures the concordance of the outcomes reported in the generated summary with those in the target summary.  \nWe measure the correlation between human evaluation scores and metric scores. For traditional summary evaluation metrics, we utilize ROUGE [11], BERTScore [27], DeltaEI [4], [23], NLI and ClaimVer [3]. ROUGE computes the n-gram similarity scores, while BERTScore assesses the generated summaries using the BERT model. Lastly, Delta-EI measures the probability distributions of evidence direction among intervention-output pairs of the target and generated summary. For the cases of NLI and ClaimVer, the procedure follows in the same manner as described in the previous work [24]. We also utilize Large Language Model (LLM) prompts as baselines to score the similarity between original summaries and model-generated summaries as in Table 3. We utilize BioMistral-7B [9], which is an opensource pre-trained LLM for medical domains. Llama3-8B, 2 Llama3.1-8B 3 and Orca-7B [16] are state-of-the-art opensource Large Language Models from Meta and Microsoft. Using the output scores, we compare them with PIO scores to analyze their correlations like other metrics.  \nTABLE 3. Prompt used for evaluating summaries using LLM."
+  },
+  {
+    "chunk_id": 17,
+    "question": [
+      "What model is used for paraphrasing in the data augmentation step?",
+      "What metrics are compared using the Spearman correlation in the study?",
+      "How many epochs is the model trained for, and what batch size is configured?"
+    ],
+    "content": "## B. IMPLEMENTATION DETAILS  \nFor the paraphrasing in the data augmentation step, we utilize the pre-trained Pegasus model for paraphrasing [26]. We employ the MSLR Cochrane dataset [21] and the augmented datasets to train the model. In our comprehensive study, we conduct a detailed comparison between human evaluation scores and embeddings generated by models for summaries. To achieve this, we utilize RoBERTa-base, DistillRoBERTa-base [20], and RoBERTa-large [13] as our models. These models embed text to measure the similarity between the original summary and the augmented summary. For the test dataset, we utilized the MSLR Cochrane dataset, which comprises 597 sets (ground truth summary and modelgenerated summary) from 6 models and their PIO, fluency, direction, and strength scores. We compare the PIO scores and REMDoC scores using the Spearman correlation ( ρ ). We configure the batch size of 128 and train for 4 epochs with a learning rate of 10 -4 , using the AdamW optimizer.  \n2 https://huggingface.co/meta-llama/Meta-Llama-3-8B  \n3 https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct"
+  },
+  {
+    "chunk_id": 18,
+    "question": [
+      "What type of CPU is used in the experiments mentioned in the passage?",
+      "Which software environments are specified for the experiments?",
+      "What hardware components are mentioned alongside the CPU in the computational resources?"
+    ],
+    "content": "## C. COMPUTATIONAL RESOURCES  \nWe use AMD Ryzen 5 5600G CPU (3.90 GHz) with two NVIDIA RTX 4090 GPUs for the experiments. The software environments are Python 3.11.5 and PyTorch 2.3.1.  \nTABLE 4. Results of correlation coefficients between automated metrics and PIO, Fluency, Direction and Strength."
+  },
+  {
+    "chunk_id": 19,
+    "question": [
+      "What role do data augmentation techniques play in improving the correlation between automated metrics and human evaluations according to the passage?",
+      "Which model achieved the highest correlation coefficient and what combination of methods was used to reach this performance?",
+      "How do the performances of RoBERTa models compare when trained on augmented data versus their original metrics, based on the findings in the passage?"
+    ],
+    "content": "## D. PERFORMANCE COMPARISON  \nwe present comprehensive experimental results in Table 4 that highlight significant improvements in the correlation between automated metrics and human evaluations through the use of various data augmentation strategies combined with contrastive learning. Our findings emphasize the crucial role of data augmentation techniques and model scale in achieving superior performance. Notably, the RoBERTalarge model, when subjected to a combination of all six augmentation methods, achieves the highest correlation coefficient of 0.519. In terms of fluency, the REMDoC model shows second highest among the models compared. Llama 3.1-8B model achieved the highest scores in the fluency evaluation. This outcome suggests that the inherent knowledge embedded within large language models (LLMs) enables them to more accurately assess and measure the fluency of summaries. Additionally, REMDoC demonstrates a robust correlation of 0.401 for direction, indicating its effectiveness in modeling directional aspects of language that align well with human judgment. For the strength aspect, REMDoC achieves a correlation of 0.491, again outperforming other models examined. This exceptional performance can be attributed to the model's larger capacity, enabling it to better process and integrate complex variations in training data, resulting in assessments that closely mirror human evaluations. Additionally, we observe that all three models, RoBERTa-base, RoBERTa-large, and Distill-RoBERTa-base, exhibited superior performance when trained on augmented data compared to their original metrics. This improvement indicates that data augmentation not only enhances the robustness and generalization capabilities of the models but also significantly boosts their alignment with human evaluations. Furthermore, We visualize the  \n<!-- image -->  \n<!-- image -->  \nIEEE AccesS'  \nFIGURE 4. Correlation coefficients between various metrics including widely used metrics and REMDoC.  \n<!-- image -->  \ncorrelation between previous metrics and the proposed metric as shown in Figure 4. Human evaluation (PIO) displays weak correlations with metrics except for our proposed metric. STS and NLI show a high correlation, which leverages sentence bert. Our metric exhibits weak correlations with most metrics except for DeltaEI, suggesting DeltaEI captures somewhat similar aspects of evaluation. We find that correlations for the LLM-based evaluations are especially low compared to other methods. Our findings reveal that despite the application of recent LLM prompt engineering techniques, it remains challenging to produce results that closely resemble human evaluation."
+  },
+  {
+    "chunk_id": 20,
+    "question": [
+      "What is the primary focus of the ablation study mentioned in the passage?",
+      "How does the ablation study contribute to the overall research findings?",
+      "What methodologies are typically employed in conducting an ablation study?"
+    ],
+    "content": "## E. ABLATION STUDY"
+  },
+  {
+    "chunk_id": 21,
+    "question": [
+      "What is the purpose of the ablation study mentioned in the passage?",
+      "Which data augmentation methods, when removed, resulted in the most significant decreases in correlation scores?",
+      "How do the findings about data augmentation methods contribute to improving model outputs in relation to human perceptions?"
+    ],
+    "content": "## 1) PERFORMANCE AMONG EACH DATA AUGMENTATION APPROACH  \nFor the ablation study, we conduct experiments by measuring the correlation each time we remove a specific augmentation method. In Table 5, we observe that removing positive samples (Synonym Replacement (SR) and Paraphrase (PAR)) leads to a decrease in correlation scores. Additionally, we notice the most significant score drop when removing Antonym (AR) and NER Swap (NER). In the Roberta large model training, removing AR and NER individually results in a decrease of 0.124 and 0.145, respectively. These insights collectively point to the efficacy of targeted data augmentation in bridging the gap between automated evaluations and human perceptions, suggesting a path forward for enhancing the reliability and human-likeness of model outputs. The nuanced understanding of text provided by these augmentation methods fosters a deeper comprehension of context, which is essential for models tasked with evaluating text in a manner that resonates with human interpretations.  \nTABLE 5. Results of correlation coefficients between automated metrics and human evaluation(PIO) across different data augmentation methods.  \nTABLE 6. Performance comparison according to the number of NER groups."
+  },
+  {
+    "chunk_id": 22,
+    "question": [
+      "What is evaluated in the performance of the models in the passage?",
+      "Which model shows the most significant improvement with 7 NER swaps, according to the passage?",
+      "How does the performance of RoBERTa-base and DistilRoBERTa-base change with an increasing number of NER category swaps?"
+    ],
+    "content": "## 2) PERFORMANCE AMONG THE NUMBER OF NER SWAP  \nFor each model, we evaluate the correlation performance after swapping 1, 3, 5, and 7 NER categories as shown in Table 6. For RoBERTa-base and DistilRoBERTa-base, the performance generally improves as the number of swapped NER categories increases. This trend suggests that these models can adapt to the introduced variability up to a certain extent. The most significant improvement is observed in RoBERTa-large with 7 NER swaps, achieving a correlation coefficient of 0.519, highlighting its superior capacity to handle extensive NER category swaps."
+  },
+  {
+    "chunk_id": 23,
+    "question": [
+      "What do traditional metrics like ROUGE1 and BERTScore fail to recognize when evaluating document summaries?",
+      "How does the proposed metric differ from traditional approaches in assessing the quality of summaries?",
+      "What advantage does the Llama 3.1-8B model have over the REMDoC model in evaluating summaries with exaggerated or irrelevant details?"
+    ],
+    "content": "## F. CASE STUDY  \nAs illustrated in Table 7, the document and summary exhibit nearly identical content, indicating a very high correlation between them. However, existing metrics such as ROUGE1, BERTScore, and NLI report low correlation coefficients  \nTABLE 7. Case study on evaluating the original summary, exaggerated summary and summary with irrelevant details.  \nbetween the document and summary, failing to recognize their semantic overlap accurately. In contrast, our proposed metric successfully evaluates the high correlation between the document and the summary. By accurately capturing the degree to which the summary preserves the document's original meaning, our metric demonstrates its effectiveness in assessing summary quality. This underscores the superiority of our metric over traditional approaches in evaluating medical document summaries, particularly in cases where semantic preservation is critical. In addition to the experiments presented in Table 7, we conducted further evaluations using summaries that included exaggerated information and irrelevant details. Interestingly, while our proposed metric demonstrated strong performance in assessing the quality of summaries that closely preserved the original document's meaning, the Llama 3.1-8B model excelled in identifying and penalizing these exaggerated and irrelevant summaries more accurately than our model, REMDoC. This improved performance of the Llama3.1-8B model can likely be attributed to the vast amount of inherent knowledge it possesses. With access to a broader context and a deeper understanding of language nuances, the Llama3.1-8B model is better equipped to detect discrepancies and ensure that the summaries maintain a high degree of relevance and accuracy. This highlights the strengths of large language models in capturing subtleties that might be missed by more specialized metrics, particularly in scenarios where summaries deviate from the original content in misleading ways."
+  },
+  {
+    "chunk_id": 24,
+    "question": [
+      "What method does the paper propose for evaluating medical multi-document summaries?",
+      "How does the proposed model's performance compare to existing metrics?",
+      "What potential future applications does the paper suggest for its findings?"
+    ],
+    "content": "## V. CONCLUSION  \nThis paper proposes a reference-free medical multi-document summary evaluation of the metric via contrastive learning to the pre-trained language models. Experimental results demonstrate that our evaluating model outperforms existing metrics, indicating strong alignment with human evaluations. We expect that our findings can be adapted and expanded, serving as a stepping stone toward broader medical applications."
+  },
+  {
+    "chunk_id": 25,
+    "question": [
+      "What are the main challenges mentioned regarding access to medical datasets?",
+      "How do augmentation techniques address data size limitations, and what is a potential drawback of these techniques?",
+      "What future work is suggested to validate the model's robustness in healthcare environments?"
+    ],
+    "content": "## VI. LIMITATIONS  \nAccess to large-scale, diverse, real-world medical datasets is challenging due to privacy and regulatory limitations, which restrict the availability of publicly accessible, representative medical data. Additionally, while our augmentation techniques help address data size limitations, they may not perfectly capture the complexity and variability of true clinical scenarios, potentially impacting generalizability to diverse real-world applications. Future work could test the model in varied healthcare environments to further validate its robustness.  \n<!-- image -->  \n<!-- image -->  \nIEEE AccesS'"
+  },
+  {
+    "chunk_id": 26,
+    "question": [
+      "What is the recommended use of REMDoC in clinical settings according to the passage?",
+      "Why is continuous monitoring and periodic evaluation of REMDoC's performance emphasized?",
+      "What are the potential limitations of the datasets used for training and evaluating REMDoC as mentioned in the text?"
+    ],
+    "content": "## VII. ETHICAL CONSIDERATION  \nWe recognize the potential implications of relying on automated systems in clinical settings, where decisions could significantly impact patient care. To mitigate risks, we recommend that REMDoC be used as a supplementary tool rather than a replacement for human judgment. Continuous monitoring and periodic evaluation of the metric's performance in real-world scenarios are necessary to prevent biases or inaccuracies from affecting clinical outcomes. Additionally, it is important to acknowledge that the datasets used for training and evaluating REMDoC may be inherently limited. These datasets are curated and evaluated by human experts, whose assessments can be subjective and influenced by personal biases. The limited diversity of these datasets may not fully capture the complexity of real-world clinical scenarios, potentially leading to skewed outcomes. Therefore, it is essential to continually expand and diversify the datasets, and to be aware of the limitations of human evaluation in order to refine REMDoC."
+  },
+  {
+    "chunk_id": 27,
+    "question": [
+      "What are the primary research interests of Jimin Lee as mentioned in the passage?",
+      "How does Hwanhee Lee's educational background contribute to his role as an Assistant Professor?",
+      "What is the significance of the references listed in the passage regarding advancements in natural language processing and summarization?"
+    ],
+    "content": "## REFERENCES  \n- [1] M. Abdollahi, X. Gao, Y. Mei, S. Ghosh, J. Li, and M. Narag, ''Substituting clinical features using synthetic medical phrases: Medical text data augmentation techniques,'' Artif. Intell. Med. , vol. 120, Oct. 2021, Art. no. 102167.\n- [2] Y.-C. Chen. (2020). Uniter: Universal Image-Text Representation Learning .\n- [3] P. P. S. Dammu. (2024). Claimver: Explainable Claim-Level Verification and Evidence Attribution of Text Through Knowledge Graphs .\n- [4] J. DeYoung, I. Beltagy, M. v. Zuylen, B. Kuehl, and L. L. Wang, ''MS2: Multi-document summarization of medical studies,'' in Proc. Conf. Empirical Methods Natural Lang. Process. , Jan. 2021, pp. 7494-7513.\n- [5] J. DeYoung, E. Lehman, B. Nye, I. Marshall, and B. C. Wallace, ''Evidence inference 2.0: More data, better models,'' in Proc. 19th SIGBioMed Workshop Biomed. Lang. Process. , 2020, pp. 123-132.\n- [6] S. Goodarzi, N. Kagita, D. Minn, S. Wang, R. Dessi, S. Toshniwal, A. Williams, J. Lanchantin, and K. Sinha, ''Robustness of named-entity replacements for in-context learning,'' in Proc. Findings Assoc. Comput. Linguistics , 2023, pp. 10914-10931.\n- [7] V. Karpukhin. (2020). Dense Passage Retrieval for Open-Domain Question Answering .\n- [8] B. Khan, Z. A. Shah, M. Usman, I. Khan, and B. Niazi, ''Exploring the landscape of automatic text summarization: A comprehensive survey,'' IEEE Access , vol. 11, pp. 109819-109840, 2023.\n- [9] Y. Labrak, A. Bazoge, E. Morin, P.-A. Gourraud, M. Rouvier, and R. Dufour, ''BioMistral: A collection of open-source pretrained large language models for medical domains,'' 2024, arXiv:2402.10373 .\n- [10] H. Lee, S. Yoon, F. Dernoncourt, T. Bui, and K. Jung. (2021). Umic: An Unreferenced Metric for Image Captioning via Contrastive Learning .\n- [11] C.-Y. Lin, ''ROUGE: A package for automatic evaluation of summaries,'' Text Summarization Branches Out , vol. 2, pp. 74-81, Jul. 2004.\n- [12] W. Lin, S. Li, C. Zhang, B. Ji, J. Yu, J. Ma, and Z. Yi. (2022). Summscore: A Comprehensive Evaluation Metric for Summary Quality Based on Crossencoder .\n- [13] Y. Liu, M. Ott, N. Goyal, J. Du, M. Joshi, D. Chen, O. Levy, M. Lewis, L. Zettlemoyer, and V. Stoyanov, ''RoBERTa: A robustly optimized BERT pretraining approach,'' 2019, arXiv:1907.11692 .\n- [14] S. Meystre and P. J. Haug, ''Natural language processing to extract medical problems from electronic clinical documents: Performance evaluation,'' J. Biomed. Informat. , vol. 39, no. 6, pp. 589-599, Dec. 2006.\n- [15] G. A. Miller, ''WordNet: A lexical database for English,'' Commun. ACM , vol. 38, no. 11, pp. 39-41, 1995.\n- [16] A. Mitra, L. Del Corro, S. Mahajan, A. Codas, C. Simoes, S. Agarwal, X. Chen, A. Razdaibiedina, E. Jones, K. Aggarwal, H. Palangi, G. Zheng, C. Rosset, H. Khanpour, and A. Awadallah, ''Orca 2: Teaching small language models how to reason,'' 2023, arXiv:2311.11045 .\n- [17] M. F. Mridha, A. A. Lima, K. Nur, S. C. Das, M. Hasan, and M. M. Kabir, ''A survey of automatic text summarization: Progress, process and challenges,'' IEEE Access , vol. 9, pp. 156043-156070, 2021.\n- [18] Y. Otmakhova, K. Verspoor, T. Baldwin, and J. H. Lau, ''The patient is more dead than alive: exploring the current state of the multi-document summarisation of the biomedical literature,'' in Proc. 60th Annu. Meeting Assoc. Comput. Linguistics , May 2022, pp. 5098-5111.\n- [19] N. Reimers and I. Gurevych, ''Sentence-BERT: Sentence embeddings using Siamese BERT-networks,'' 2019, arXiv:1908.10084 .\n- [20] V. Sanh, L. Debut, J. Chaumond, and T. Wolf, ''DistilBERT, a distilled version of BERT: Smaller, faster, cheaper and lighter,'' 2019, arXiv:1910.01108 .\n- [21] N. Thakur, N. Reimers, A. Rücklé, A. Srivastava, and I. Gurevych, ''Beir: A heterogeneous benchmark for zero-shot evaluation of information retrieval models,'' in Proc. 35th Conf. Neural Inf. Process. Syst. Datasets Benchmarks Track , 2021, pp. 1-26.\n- [22] D. Wadden, K. Lo, B. Kuehl, A. Cohan, I. Beltagy, L. L. Wang, and H. Hajishirzi, ''SciFact-open: Towards open-domain scientific claim verification,'' 2022, arXiv:2210.13777 .\n- [23] B. Wallace, S. Saha, F. Soboczenski, and I. Marshall, ''Generating (factual) narrative summaries of RCTs: Experiments with neural multi-document summarization,'' in Proc. AMIA. Annu. Symp. AMIA Symp. , Jan. 2020, pp. 605-614.\n- [24] L. L. Wang. (2023). Automated Metrics for Medical Multi-Document Summarization Disagree With Human Evaluations .\n- [25] J. Wei and K. Zou. (2019). Eda: Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks .\n- [26] J. Zhang, Y. Zhao, M. Saleh, and P. J. Liu. (2020). Pegasus: Pre-Training With Extracted Gap-sentences for Abstractive Summarization .\n- [27] T. Zhang, V. Kishore, F. Wu, K. Q. Weinberger, and Y. Artzi. (2020). Bertscore: Evaluating Text Generation With BERT .  \n<!-- image -->  \nJIMIN LEE received the B.S. degree in statistical modeling data sciences from The Pennsylvania State University, University Park, USA, in 2022. He is currently pursuing the M.S. degree with the Department of Artificial Intelligence, ChungAng University. His research interests include summarization and NLP applications for the medical domain.  \n<!-- image -->  \n<!-- image -->  \nINGEOL BAEK received the B.S. degree in urban engineering from Jeonbuk National University, South Korea, in 2023. He is currently pursuing the M.S. degree with the Department of Artificial Intelligence, Chung-Ang University. His research interests include information retrieval and the factuality of language models.  \nHWANHEE LEE (Member, IEEE) received the B.S. and Ph.D. degrees in electrical and computer engineering from Seoul National University, Seoul, South Korea, in 2017 and 2022, respectively. He was a Research Intern with the NAVER AI Laboratory, from August 2021 to January 2022. He has been an Assistant Professor with the Department of Artificial Intelligence, Chung-Ang University, Seoul, since March 2023. His main research interest includes mitigating and detecting hallucination of language models."
+  }
+]

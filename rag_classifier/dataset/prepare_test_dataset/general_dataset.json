@@ -1,0 +1,282 @@
+[
+  {
+    "question": "What's your favorite movie?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Do you like rainy days?",
+    "needs_rag": 0
+  },
+  {
+    "question": "How do airplanes fly?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What is your favorite book?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Why do leaves change color in fall?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What is the capital of France?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Do you prefer coffee or tea?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What season do you like the most?",
+    "needs_rag": 0
+  },
+  {
+    "question": "How do you usually spend your weekends?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What's your favorite food?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Is it hot today?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What hobbies do you enjoy?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Do you prefer cats or dogs?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What kind of music do you like?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Have you ever traveled abroad?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What time do you usually wake up?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Do you enjoy cooking?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What's your favorite sport?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What languages can you speak?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Do you prefer summer or winter?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What was the last movie you watched?",
+    "needs_rag": 0
+  },
+  {
+    "question": "How do you feel about public speaking?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What type of movies do you enjoy?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What's your dream vacation destination?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Do you like to read books or watch movies?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What is your favorite holiday?",
+    "needs_rag": 0
+  },
+  {
+    "question": "How do you stay active?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What is your favorite color?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Do you enjoy playing video games?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What is your favorite dessert?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Do you like the beach?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What time do you usually go to bed?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What's your favorite way to relax?",
+    "needs_rag": 0
+  },
+  {
+    "question": "What is something you've always wanted to learn?",
+    "needs_rag": 0
+  },
+  {
+    "question": "하늘은 왜 파랗게 보여?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 음식은 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "여름과 겨울 중 어느 계절을 더 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 영화는 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 음악을 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "주말에 주로 무엇을 하시나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "커피와 차 중 어떤 것을 더 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "여행을 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 책은 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 취미가 있나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "비 오는 날을 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 스포츠를 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "공개 연설에 대해 어떻게 생각하시나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 종류의 영화들을 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "꿈의 여행지는 어디인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "책 읽는 것과 영화 보는 것 중 무엇을 더 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 휴일은 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떻게 활동적으로 지내나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 색은 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "비디오 게임을 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 디저트는 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "해변을 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "보통 몇 시에 자나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떻게 휴식을 취하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "항상 배우고 싶었던 것은 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "오늘 기온이 어떤가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "당신의 생일은 언제인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 TV 프로그램은 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "일상에서 가장 좋아하는 순간은 언제인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 과일을 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 계절은 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 동물은 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 간식은 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 종류의 차를 좋아하나요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 게임은 무엇인가요?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 예술가나 밴드는 누구인가요?",
+    "needs_rag": 0
+  }
+]

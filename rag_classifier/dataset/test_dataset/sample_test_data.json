@@ -1,0 +1,82 @@
+[
+  {
+    "question": "안녕하세요 반갑습니다",
+    "needs_rag": 0
+  },
+  {
+    "question": "오늘 저녁 뭐 먹을까?",
+    "needs_rag": 0
+  },
+  {
+    "question": "감사합니다",
+    "needs_rag": 0
+  },
+  {
+    "question": "화이팅!",
+    "needs_rag": 0
+  },
+  {
+    "question": "내일 날씨 좋을까?",
+    "needs_rag": 0
+  },
+  {
+    "question": "딥러닝과 머신러닝 차이는?",
+    "needs_rag": 0
+  },
+  {
+    "question": "Git merge와 rebase 차이점",
+    "needs_rag": 0
+  },
+  {
+    "question": "클라우드 컴퓨팅이란?",
+    "needs_rag": 0
+  },
+  {
+    "question": "파이썬 딕셔너리 사용법",
+    "needs_rag": 0
+  },
+  {
+    "question": "HTTP와 HTTPS 차이",
+    "needs_rag": 0
+  },
+  {
+    "question": "Q3 재무제표 확인해줘",
+    "needs_rag": 1
+  },
+  {
+    "question": "지난달 회의록 있어?",
+    "needs_rag": 1
+  },
+  {
+    "question": "신입사원 온보딩 자료 찾아줘",
+    "needs_rag": 1
+  },
+  {
+    "question": "C 프로젝트 타임라인 알려줘",
+    "needs_rag": 1
+  },
+  {
+    "question": "올해 채용 계획 문서는?",
+    "needs_rag": 1
+  },
+  {
+    "question": "고객 만족도 조사 결과 요약",
+    "needs_rag": 1
+  },
+  {
+    "question": "기술 스택 문서 보고 싶어",
+    "needs_rag": 1
+  },
+  {
+    "question": "부서별 KPI 목표치는?",
+    "needs_rag": 1
+  },
+  {
+    "question": "재택근무 지침 확인하고 싶어",
+    "needs_rag": 1
+  },
+  {
+    "question": "협력사 계약 조건 알려줘",
+    "needs_rag": 1
+  }
+]

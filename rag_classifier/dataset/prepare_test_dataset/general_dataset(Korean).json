@@ -1,0 +1,290 @@
+[
+  {
+    "question": "오늘 날씨 어때?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 계절은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "취미가 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "아침에 주로 뭐 먹어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "제일 좋아하는 과일은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "여행 가고 싶은 곳이 있어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "좋아하는 영화 장르는 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "비 오는 날 좋아해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 음악을 듣는 걸 좋아해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "주말에 주로 뭐 해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 색은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 책을 좋아해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "애완동물이 있어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 TV 프로그램은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "운동 좋아해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "좋아하는 음식이 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 기억에 남는 여행은 어디야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "자주 가는 카페가 있어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "스포츠 중에 어떤 걸 좋아해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 계절은 왜 그래?",
+    "needs_rag": 0
+  },
+  {
+    "question": "아침형 인간이야, 아니면 저녁형 인간이야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 종류의 차를 좋아해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 간식은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "요즘 관심 있는 취미가 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "커피는 좋아해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "주로 어떤 SNS를 사용해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 게임은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "하늘은 왜 파래?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 기억에 남는 생일은 언제야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 영화를 최근에 봤어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "버스나 지하철 중에 어떤 걸 더 좋아해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 아침 음식은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "무슨 일을 하고 있어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "주말 계획이 있어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 과목은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 영화가 제일 감동적이었어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가족과 함께하는 시간을 좋아해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "무슨 스포츠를 좋아해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 계절이 제일 좋다고 생각해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "좋아하는 꽃이 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 친한 친구는 누구야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "최근에 어떤 일이 가장 즐거웠어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "여름휴가 계획 있어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 음식을 제일 잘 요리해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "좋아하는 과일 주스는 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "자주 듣는 팟캐스트가 있어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 명절은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 종류의 패션을 좋아해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 TV 프로그램은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 기념일이 제일 특별해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 장소는 어디야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 차를 타고 싶어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 디저트는 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 종류의 영화가 제일 재밌어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 색깔은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 스타일의 음악을 선호해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 놀이공원은 어디야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "여행에서 가장 인상 깊었던 경험은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 음식을 가장 많이 먹어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 책을 최근에 읽었어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "좋아하는 만화 캐릭터는 누구야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 향수는 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 운동은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "주로 어떤 방법으로 스트레스를 푸는 편이야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 기억에 남는 영화는 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 음식이 제일 맛있어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 가족 행사는 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 스타일의 집을 선호해?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 역사적 인물에 관심 있어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "좋아하는 취미를 누가 추천했어?",
+    "needs_rag": 0
+  },
+  {
+    "question": "가장 좋아하는 동물은 뭐야?",
+    "needs_rag": 0
+  },
+  {
+    "question": "어떤 특별한 재능이 있어?",
+    "needs_rag": 0
+  }
+]

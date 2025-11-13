@@ -1,0 +1,746 @@
+[
+  {
+    "question": "What is the main focus of the research conducted by the authors in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which institutions are affiliated with the authors of the study?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What specific application of Korean speech recognition is mentioned in the title of the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main focus of the article as indicated by the keywords?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which techniques related to language models are mentioned in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How do the keywords relate to the field of natural language processing?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are some of the challenges that speech-to-text (STT) systems face in complex environments like call centers?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does recent research aim to improve the performance of speech-to-text technology?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the significance of large language models (LLMs) in the context of correcting errors in speech-to-text transcripts?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main challenge faced by text-based post-editing approaches in low-resource languages, specifically in the context of ASR for Korean?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the proposed two-stage pipeline improve error correction in ASR, and what are the three levels of granularity used in this framework?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the three key contributions of the paper regarding Korean ASR error correction, and how do they aim to advance future research in this area?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main focus of the section titled 'Related Work'?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does this section contribute to the overall context of the research?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What type of information would you expect to find in a 'Related Work' section?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the primary purpose of automatic speech recognition (ASR) error detection?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How do Meripo and Konam (2022) approach ASR error detection, and what technologies do they utilize?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What innovation do Harvill et al. (2024) introduce for ASR error detection in the absence of raw audio?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the three axes along which research on correcting ASR transcriptions has progressed?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the passage describe the relationship between model capacity, pipeline structure, and supervision granularity in the context of ASR error correction?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What challenges does the agglutinative morphology of the Korean language present for ASR transcription correction compared to other languages?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main focus of the section titled '3. Dataset'?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What key aspects of the dataset are likely to be discussed in this section?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How might the dataset be relevant to the overall topic of the document?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What method is used to collect the original STT-transcribed dialogue data for the dataset construction?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Why is anonymization important in the dataset construction process, and how is it achieved?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How many call instances were processed in total, and what is the total volume of speech represented in seconds?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main focus of the section titled '3.1.1. Original Dialogue-level Dataset'?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the original dialogue-level dataset contribute to research or applications in its field?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What characteristics or features might be expected in a dialogue-level dataset?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the purpose of creating a dataframe with speaker, dialogue key, transcribed utterance, and ground truth utterance?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Why was the decision made to shift from using entire dialogues to focusing on individual utterances?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What type of language model is adopted for building the post-processing models, and why is it preferred over a general-purpose LLM?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the average number of sentences per conversation in the dataset?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What percentage of utterance samples in the dataset contain errors?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the study ensure the dataset reflects real-world conditions for the STT model?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What percentage of errors are attributed to consonant-level distortions versus vowel-related errors?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which part of speech accounts for the largest proportion of errors, and what are some examples of errors in that category?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the three main categories of pronunciation-related errors mentioned in the passage, and how are they defined?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the purpose of partitioning the dataset into training, validation, and test sets?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How many instances are there in the training, validation, and test sets respectively?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Why is it important to rebalance duplicates within each subset of the dataset?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main purpose of the error-detection framework presented in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the framework address the issue of label imbalance in its loss function?",
+    "needs_rag": 1
+  },
+  {
+    "question": "In what way is the error detector utilized after its initial development?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main purpose of converting utterance-level transcriptions into token-level sequences?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the token masking process work when a token in the utterance-level transcription differs from the ground-truth?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What library is utilized to compute the edit distance between the tokenized representations of the utterance and its ground-truth?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the primary task formulated in the passage regarding the detection problem?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How is the loss function in the training of the detector defined, and what variables are involved?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Why is a weight factor of 𝜆 = 8 introduced in the training process?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main focus of the error-correction framework presented in this section?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What type of transcription does the framework aim to correct?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the framework intend to measure the success of the corrections made to the output?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the purpose of measuring the edit distance between the tokenized forms of 𝑈 and 𝐺?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the passage suggest the model should focus on correcting errors in utterances?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the significance of using an arrow token ( → ) and a learnable [ SEP ] token in the span-level representation?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the primary purpose of fine-tuning the Korean-pretrained seq2seq model in this passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Describe the post-processing step that is applied to construct the corrected utterance ̂ 𝐺.",
+    "needs_rag": 1
+  },
+  {
+    "question": "What actions are represented by the blue and red arrows in the illustration of the detector-corrector inference pipeline?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What criteria does the detector use to flag an utterance as erroneous or error-free?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the integration of the detector into the seq2seq corrector improve the error correction process?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the role of the corrector when the detector mistakenly identifies an error in an error-free sentence?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main focus of the experimental setup discussed in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What specific methodologies or techniques are highlighted in the experimental setup?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the experimental setup contribute to the overall objectives of the research?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main purpose of reframing the detection task as a binary classification problem at the utterance level?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How is an utterance labeled according to the alignment with its ground-truth counterpart?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What type of model is fine-tuned for the sequence classification in this study?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What does 𝑦 ( 𝑖 ) represent in the context of the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How is the weight factor 𝜆 utilized in the error detection process?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the role of the [ SEP ] token in the seq2seq model for error detection?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the primary focus of the dialogue-level correction process described in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the approach to error correction change from dialogue-level to utterance-level?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the rationale behind using smaller, linguistically targeted models for the error-correction task?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the names of the backbone models used for the seq2seq-based baseline detectors?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which model is used as a backbone encoder for the detector mentioned in Section 4?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the significance of klue/roberta-base in the context of the utterance-level baseline detector?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the two types of metrics mentioned for assessing error detection?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What does coarse-grained metrics evaluate in relation to utterance-level transcription?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How do fine-grained metrics differ from coarse-grained metrics in their assessment?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the purpose of mapping an utterance to 0 or 1 in the error detection metrics?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the Balanced Accuracy metric differ from the traditional Accuracy metric?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the key metrics used to assess fine-grained error detection in the model?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the purpose of employing coarse-grained metrics in the evaluation of the corrector's performance?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How is the Balanced Exact Match Ratio (Bal EM) calculated?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Why is the Balanced Word-Error-Rate (Bal WER) considered a more nuanced assessment compared to the Exact Match Ratio (EM)?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What learning rate is set for encoder models and seq2seq models during training?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the significance of the checkpoint selected during training, and how is it determined?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which GPUs are used for conducting all experiments mentioned in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What does the notation ( ↑ ) and ( ↓ ) signify in the context of the metrics presented in the table?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What do the colors red and blue represent in relation to the results reported in the table?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the significance of the suffix U and T in the model training descriptions?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main focus of the section titled 'Results & Analysis'?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What type of information might be included in the 'Results & Analysis' section?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Why is the 'Results & Analysis' section important in a research document?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main focus of the comparison in the detection results section?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What levels are being compared in the detection framework?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which section describes the baseline methods used for comparison?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main focus of the passage regarding granularity in sampling?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does refining sample granularity from utterance level to token level affect model performance?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What do the results indicate about Seq2seq backbones in relation to fine-grained metrics?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the two types of backbones compared in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which model achieved the highest balanced token accuracy according to the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How do encoder models generally perform compared to seq2seq models on coarse-grained metrics?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main purpose of the evaluation in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which section outlines the metrics used for evaluating the error-correction framework?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What does Tab 2 provide in relation to the findings of the evaluation?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What advantage does GPT-4o have in an utterance-level in-context learning setup compared to other variants?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does applying dialogue-level samples affect the performance of multilingual LLM baselines in error correction tasks?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Why is it suggested that utterance-level samples are more beneficial than dialogue-level contexts in low-resource language environments?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What type of model is adopted as the default corrector backbone in the study?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the performance of the Korean-pretrained model compare to that of multilingual LLM baselines?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What metrics are used to evaluate the detection and correction capabilities of the language models?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the different suffixes defined in the passage and what do they represent?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How do Korean-pretrained seq2seq models compare to LLM baselines in terms of performance and resource efficiency?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What specific issues do LLM baselines face in detecting colloquialisms and repetitive interjections in Korean?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main focus of the passage regarding model correction techniques?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How do T5-based models differ from BART-style models in their approach to sentence correction?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What advantage does span-level target refinement provide in terms of model performance?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the primary benefit of integrating the token-level KoElectra detector with the corrector framework?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the combination of the detector and pkoT5 enhance performance compared to the detector alone?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What metrics did the two-stage design achieve top marks in, according to the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the purpose of the analysis mentioned in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which models are employed as the detector and corrector in the experiments?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What framework is referred to for training the detector and corrector?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What factors contribute to the differences in detection performance between customer and agent utterances?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How do the error patterns in agent utterances differ from those in customer utterances according to the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What metrics are reported for assessing the performance of the corrector framework on agent and customer utterances?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the purpose of creating a new partition in the out-of-domain analysis?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the performance of the corrector on the out-of-domain test set compare to its performance in the original setup?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What measures were taken to ensure realistic speech-recognition scenarios during the construction of train, validation, and test splits?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the two types of out-of-domain (OOD) conditions discussed in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the performance of the framework change when tested under dialogue OOD conditions compared to the Partial OOD baseline?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What do the results in Table 3 indicate about the framework's ability to handle errors in real-world applications?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the purpose of comparing the system with a zero-rule approach in the context of error detection and correction?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the performance of the detector and corrector change with the number of error spans in utterances, according to the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What does the passage suggest about the significance of the WER gains achieved by the system compared to the zero-rule baseline?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the significance of the addresses mentioned in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the speaker respond to the citizen's inquiry?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What might be inferred about the nature of the issue being discussed?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main topic being discussed in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the speaker feel about the need for education?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What kind of education is mentioned as necessary in the conversation?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What does '/u1D448' refer to in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the difference between a 'sales report' and a 'discharge report' as mentioned in the text?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How many times is the phrase 'bathhouse sales report' mentioned in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What was the first action taken by the speaker in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What were the two different terms used in the passage to refer to a legal entity?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the speaker's wording change in the second and third sentences compared to the first?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the two scenarios where the corrector succeeds as illustrated in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the three failure modes highlighted in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "In the context of the passage, what color backgrounds are used to distinguish between successful corrections and failure modes?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the two representative success scenarios identified for the corrector in the case study?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the primary factors contributing to the failure cases mentioned in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the use of a Korean-pretrained model enhance the performance of the corrector compared to a general-purpose LLM?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main focus of the discussion in this section?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the discussion contribute to the overall understanding of the topic?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What key arguments or points are presented in the discussion?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main limitation of the current pipeline mentioned in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How might future studies improve the correction of errors that depend on broader dialogue context?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What potential enhancements to the dataset could improve correction accuracy according to the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What are the legal conditions under which the dataset derived from call transcripts can be used for academic research?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Who managed the ethical considerations in the study involving call center data, and what role did they play?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What measures were taken to ensure the privacy of the individuals involved in the call center data analysis?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the primary focus of the benchmark introduced in the passage?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the two-stage detector-corrector pipeline improve the accuracy of ASR error correction?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What unique challenges are highlighted in correcting Korean ASR output based on the experiments conducted?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What specific contributions did Yonghyun Jun make to the project?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which authors were responsible for data curation?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Who was involved in the writing, review, and editing process of the original draft?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What do the authors confirm regarding their financial interests?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How could personal relationships impact the work presented in the paper?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the purpose of declaring competing interests in academic writing?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What scholarship supported the research mentioned in the acknowledgements?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which organization provided a grant for this research, and what is its abbreviation?",
+    "needs_rag": 1
+  },
+  {
+    "question": "In what year was the preprint submitted to Elsevier?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What does the passage describe in relation to the dialogue-level dataset and its utterance-level version?",
+    "needs_rag": 1
+  },
+  {
+    "question": "How does the passage illustrate the outcome of the de-identification process?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What specific example is given regarding a conversation between the agent and the customer in the dataset?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What tool did the author(s) use to enhance the readability of their work?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What steps did the author(s) take after using ChatGPT?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Who holds responsibility for the content of the publication?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the focus of the survey mentioned in the reference by Ahlawat et al. (2025)?",
+    "needs_rag": 1
+  },
+  {
+    "question": "Which model is discussed in the reference by Baevski et al. (2020) regarding self-supervised learning for speech representations?",
+    "needs_rag": 1
+  },
+  {
+    "question": "What is the main topic of the paper by Ma et al. (2024) related to large language models?",
+    "needs_rag": 1
+  }
+]
